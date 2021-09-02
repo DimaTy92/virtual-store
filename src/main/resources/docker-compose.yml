@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  db:
+    image: postgres
+    environment:
+      MYSQL_DATABASE: customer
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
